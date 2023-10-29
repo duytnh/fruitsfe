@@ -54,7 +54,7 @@ const StorePage = () => {
     }
 
     return (
-        <>
+        <div className='store-container'>
             <div className='title-product'>
                 <div className='classon'>
                     <div className='container'>
@@ -143,7 +143,7 @@ const StorePage = () => {
                     </div>
                 </div>
             </div >
-        </>
+        </div>
     )
 }
 

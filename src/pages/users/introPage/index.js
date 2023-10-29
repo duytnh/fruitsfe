@@ -20,7 +20,7 @@ import ModalCrousel from 'components/ModalCrousel';
 const IntroPage = () => {
     const images = [list1, list2, list3, list4];
     return (
-        <>
+        <div className='intro-all'>
             <div className='intro-container'>
                 <img src={slide} alt='banner' />
                 <div className=' container form-contact'>
@@ -71,7 +71,7 @@ const IntroPage = () => {
             <div className='modal'>
                 <ModalCrousel images={images} />
             </div>
-        </>
+        </div>
     );
 }
 

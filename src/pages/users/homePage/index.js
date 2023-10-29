@@ -26,7 +26,7 @@ import ContactForm from 'components/ContactForm';
 
 const HomePage = () => {
     return (
-        <>
+        <div className='home-container'>
             <Carousel className='carosel-home' autoPlay
                 infiniteLoop
                 showThumbs={false}
@@ -172,7 +172,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

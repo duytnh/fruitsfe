@@ -7,7 +7,7 @@ import { MdOutlineMailLock, MdCall } from 'react-icons/md';
 
 const ContactPage = () => {
     return (
-        <div>
+        <div className='contact-container'>
             <div className='map'>
                 <iframe
                     title="Google Map"
