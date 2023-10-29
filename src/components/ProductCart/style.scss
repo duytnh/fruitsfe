@@ -1,0 +1,75 @@
+.card {
+    width: 262px;
+    height: 385px;
+    border: 1px solid #fdc215;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    .discount {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background-color: #e925b8;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+
+        p {
+            position: absolute;
+            top: 15px;
+            left: 5px;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .namepro {
+        text-align: center;
+        text-decoration: none;
+        color: #e925b8;
+        margin: 10px 0;
+    }
+
+    .priceprodis {
+        margin: 10px 0;
+        font-size: 15px;
+        color: gray;
+
+        span {
+            color: rgb(223, 9, 9);
+            font-size: 20px;
+            line-height: 20px;
+            margin-left: 5px;
+        }
+    }
+
+    button {
+        width: 143px;
+        height: 37px;
+        border: 1px solid #fff;
+        background-color: #669933;
+        text-align: center;
+        font-size: 14px;
+        line-height: 35px;
+        border-radius: 20px;
+        padding: 0 20px 0 20px;
+        color: #fff;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}

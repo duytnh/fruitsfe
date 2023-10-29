@@ -1,0 +1,258 @@
+@use "sass:map";
+@import "style/pages/theme";
+
+.head {
+    position: fixed;
+    z-index: 9999999999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header__top {
+    background: map.get($theme-colors, "main");
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.header__top_right {
+    display: grid;
+    justify-content: flex-end;
+
+    ul {
+        display: flex;
+        column-gap: 10px;
+        line-height: 23px;
+        list-style: none;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(221, 221, 221);
+        }
+    }
+
+}
+
+.header__bottom {
+    height: 90px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fixed {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s;
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header__bottom_left,
+.header__bottom_mid {
+    display: flex;
+    align-items: center;
+    color: map.get($theme-colors, "text");
+}
+
+.header__bottom_left {
+    img {
+        width: 196px;
+        height: 84px;
+        margin-top: 2px;
+        display: block;
+        max-width: 100%;
+        max-height: 90px;
+    }
+}
+
+.header__bottom_mid {
+    .input_search {
+        font-size: 13px;
+        line-height: 21px;
+        padding: 0px 10px;
+        width: 80%;
+        height: 40px;
+        border: 1px solid #dddddd;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: color 0.3s ease 0s, border 0.3s;
+    }
+
+    button {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.4;
+        line-height: 32px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: map.get($theme-colors, "main");
+        color: #ffffff;
+        height: 40px;
+        width: 40px;
+        max-width: 100%;
+        min-width: 33px;
+        min-height: 33px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        position: relative;
+        border: 0;
+
+        .icon_search {
+            text-align: center;
+            font-size: 25px;
+            font-family: fl-icons;
+            position: relative;
+            top: 4.5px;
+            bottom: 1.5px;
+        }
+    }
+}
+
+.header__bottom_right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .header__bottom_menu {
+        .menu {
+            list-style: none;
+            display: flex;
+            padding: 0 10px;
+            width: 570px;
+            justify-content: space-between;
+            font-weight: 500;
+
+            li:nth-child(3) {
+                position: relative;
+
+                svg {
+                    font-size: 12px;
+                }
+            }
+
+            .selected {
+                list-style: none;
+
+                a {
+                    background: map.get($theme-colors, "main");
+                    color: #ffffff;
+                    border-radius: 20px;
+                    padding: 7px 9px;
+                    font-weight: 500;
+                }
+            }
+
+            li:hover .menu__dropdown {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .menu__dropdown {
+                display: block;
+                background: #ffffff;
+                position: absolute;
+                left: -62px;
+                top: 30px;
+                width: 250px;
+                height: fit-content;
+                border: 2px solid #ececec;
+                z-index: 9;
+                transition: all, 0.5s;
+                opacity: 0;
+                visibility: hidden;
+
+                li {
+                    list-style: none;
+                    border-bottom: 1px solid #ececec;
+                    padding: 3px 0;
+                    position: relative;
+
+                    a {
+                        background: #ffffff;
+                        color: #000000;
+                        border-radius: 0;
+                        padding: 0px 15px;
+                        font-size: 14px;
+                    }
+
+                    a:hover {
+                        color: map.get($theme-colors, "main");
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .tamgiac {
+                width: 0;
+                height: 0;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-bottom: 9px solid #ffffff;
+                position: absolute;
+                top: -8px;
+                left: 90px;
+            }
+
+            .cart__button {
+                width: 33px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                background-color: #ffffff;
+                border-radius: 4px;
+                position: relative;
+                border: none;
+
+                &:hover {
+                    background: map.get($theme-colors, "main");
+
+                    svg {
+                        color: #ffffff;
+                        transition: all 0.3s;
+                    }
+                }
+
+                svg {
+                    font-size: 32px;
+                    color: rgb(255, 0, 0);
+                }
+
+                span {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    top: 0px;
+                    left: 22px;
+                    color: #fff;
+                    font-size: 14px;
+                    align-items: center;
+                    display: flex;
+                    text-align: center;
+                    background-color: darkgreen;
+
+                    h5 {
+                        position: absolute;
+                        left: 6px;
+                        text-align: end;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: map.get($theme-colors, "text");
+                font-size: 16px;
+                line-height: 33px;
+            }
+        }
+    }
+
+}

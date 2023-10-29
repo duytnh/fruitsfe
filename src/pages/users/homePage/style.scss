@@ -1,0 +1,82 @@
+.carosel-home {
+    margin-bottom: 20px;
+}
+
+.content-homepage {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px;
+}
+
+.product {
+    background-color: rgba(238, 231, 234, 0.849);
+    padding-bottom: 20px;
+}
+
+.product-body {
+    margin: 20px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 300px;
+}
+
+.img-main1 {
+    position: absolute;
+    left: 200px;
+    top: -50px;
+    width: 596.7px;
+    height: 360px;
+    animation: slideRight 0.5s ease-in-out;
+}
+
+.img-main2 {
+    position: relative;
+    right: -200px;
+    top: -20px;
+    width: 526.5px;
+    height: 370px;
+    animation: slideLeft 0.5s ease-in-out;
+}
+
+@keyframes slideRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 200px;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        right: -400px;
+    }
+
+    100% {
+        right: -200px;
+    }
+}
+
+.section {
+    background-image: url('../../../assets/users/banner-list2.png');
+    padding: 10px 0;
+    background-size: cover;
+    border-top: 5px solid orange;
+    border-bottom: 5px solid orange;
+    margin: 20px 0;
+}

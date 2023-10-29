@@ -1,0 +1,60 @@
+.map {
+    height: 350px;
+}
+
+.content-contact {
+    margin: 35px 0;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #4f3716;
+    }
+
+    p {
+        color: #000;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .icon-social {
+        margin: 10px 0;
+
+        button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            margin: 5px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .b1 {
+            background-color: rgb(76, 76, 194);
+            color: #fff;
+        }
+
+        .b2 {
+            background-color: rgb(200, 128, 206);
+            color: #fff;
+        }
+
+        .b3 {
+            background-color: rgb(8, 8, 8);
+            color: #fff;
+        }
+
+        .b4 {
+            background-color: rgb(100, 194, 76);
+            color: #fff;
+        }
+
+        .b5 {
+            background-color: rgb(92, 157, 218);
+            color: #fff;
+        }
+
+    }
+}

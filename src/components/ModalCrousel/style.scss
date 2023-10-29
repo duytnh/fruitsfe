@@ -1,0 +1,38 @@
+.close,
+.previous,
+.next {
+    position: absolute;
+    font-size: 20px;
+    background-color: #00000000;
+    border: none;
+    color: #6b6767;
+}
+
+.close {
+    top: 10px;
+    right: 10px;
+}
+
+.previous {
+    top: 50%;
+    left: 10px;
+}
+
+.next {
+    top: 50%;
+    right: 10px;
+}
+
+
+.custom-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}

@@ -1,0 +1,115 @@
+@use "sass:map";
+@import "theme";
+@import "responsive";
+
+html,
+body {
+    margin: 0;
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@include Responsive ($DESKTOP) {
+    .container {
+        max-width: 1170px;
+        width: 100%;
+        margin: auto;
+        color: #ffffff;
+        padding: 0 10px;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.3333333%;
+        max-width: 33.3333333%;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-8 {
+        flex: 0 0 66.6666667%;
+        max-width: 66.6666667%;
+    }
+
+    .col-lg-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@include Responsive ($MEDIUM_DEVICE) {
+    .container {
+        max-width: 950px;
+        width: 100%;
+        margin: auto;
+        color: #ffffff;
+        padding: 0 5px;
+    }
+
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@include Responsive ($TABLET_DEVICE) {
+    .col-tl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-tl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@include Responsive ($WIDE_DEVIVE) {
+    .col-w-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-w-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@include Responsive ($SMALL_DEVICE) {
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,19 @@
+.categorycard {
+    width: 358px;
+    height: 155px;
+    transition: all 0s ease 0.3s;
+    border: 2px solid darkorange;
+    border-radius: 15px;
+    background-size: cover;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.categorycard img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.categorycard:hover img {
+    transform: scale(1.2);
+}

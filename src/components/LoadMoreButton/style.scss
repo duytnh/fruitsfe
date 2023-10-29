@@ -1,0 +1,18 @@
+.button-loadmore {
+    width: 80px;
+    height: 37px;
+    border: 1px solid #669933;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+    border-radius: 20px;
+    padding: 0 20px 0 20px;
+    color: #669933;
+}
+
+.button-loadmore:hover {
+    background-color: #669933;
+    color: #fff;
+    cursor: pointer;
+}

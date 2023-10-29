@@ -1,0 +1,32 @@
+.title-container {
+    margin: 0px 100px;
+
+    h3 {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+
+        b {
+            display: block;
+            flex: 1;
+            height: 2px;
+            opacity: .1;
+            background-color: #000;
+        }
+
+        span {
+            font-size: 150%;
+            color: rgb(92, 34, 0);
+            margin: 0 15px;
+        }
+    }
+
+    p {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
